@@ -1,0 +1,40 @@
+.container-navbar{
+    height: 100px;
+    width: 100%;
+}
+
+.navbar-superior{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1d26de;
+    height: 40px;
+}
+
+.navbar-inferior{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: azure;
+}
+
+.container-logo{
+    font-size: 60px;
+}
+
+.container-listnavbar{
+   
+}
+
+.list-navbar{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+}
+
+.item-navbar{
+    margin: 0px 40px;
+    cursor: pointer;
+    font-size: 25px;
+}
