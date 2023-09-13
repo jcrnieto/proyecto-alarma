@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/navBar/Navbar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Company from './components/company/Company';
-import Products from './components/products/products';
+import Products from './components/products/Products';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/Footer';
 
