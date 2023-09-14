@@ -7,15 +7,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #1d26de;
+    background: #0A2737;
     height: 40px;
+    color: aliceblue;
 }
 
 .navbar-inferior{
     display: flex;
     justify-content: space-around;
     height: 100px;
-    background-color: azure;
+    background-color: #FFFFFF;
 }
 
 .container-logo{
@@ -26,7 +27,7 @@
    
 }
 
-.list-navbar{
+.menu-items{
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -37,4 +38,43 @@
     margin: 0px 40px;
     cursor: pointer;
     font-size: 25px;
+   
+}
+
+.link-navbar{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .navbar-superior{
+        display: none;
+    }
+
+    .menu-items {
+        display: none;
+        position: absolute;
+        background-color: #113d0d;
+        margin-top: 330px;
+        width: 100%;
+        z-index: 999;
+        padding: 10px;
+        height: 200px;
+    }
+    
+    .menu-icon{
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+    } 
+
+    .menu-items.open{
+        display: block;
+      } 
 }

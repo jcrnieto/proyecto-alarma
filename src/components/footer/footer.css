@@ -4,7 +4,7 @@
 
 .footer-superior{
     height: 300px;
-    background: #1d26de;
+    background: #0A2737;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -17,12 +17,20 @@
 
 .footer-inferior{
     height: 50px;
-    background: #7279ec;
+    background: #115E7F;
 }
 
 .footer-reserved{
     text-align: center;
     font-size: 20px;
     margin-top: 0;
+}
+
+@media (max-width: 768px){
+    .footer-superior{
+        height: 100vh;
+        flex-direction: column;
+       
+    }
 }
 

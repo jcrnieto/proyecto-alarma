@@ -1,6 +1,14 @@
 import './navbar.css';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { GrClose } from 'react-icons/gr';
 
 const Navbar = () => {
+
+   const [menuOpen, setMenuOpen] = useState(false);
+   const [openToggler, setOpenToggler] = useState(false);
+
   return (
     <div className='container-navbar'>
         <div className='navbar-superior'>
@@ -15,12 +23,21 @@ const Navbar = () => {
                 LOGO
             </div>
             <div className='container-listnavbar'>
-                <ul className='list-navbar'>
-                    <li className='item-navbar'> Empresa </li>
-                    <li className='item-navbar'> Productos </li>
-                    <li className='item-navbar'> Contacto </li>
-                </ul>
+                <ul className={`menu-items ${menuOpen ? "open" : ""}`}>
+                   <li className='item-navbar'>
+                      <Link to='/' className='link-navbar'>Empresa </Link>
+                   </li>
+                   <li className='item-navbar'> 
+                      <Link to='/products' className='link-navbar'> Productos </Link>
+                   </li>
+                   <li className='item-navbar'>
+                      <Link to='/contact' className='link-navbar'> Contacto </Link>
+                   </li>
+               </ul>
             </div>
+            <div className='menu-icon' onClick={() => setMenuOpen(!menuOpen)}>
+              {menuOpen ? <GrClose /> : <AiOutlineMenu />}
+           </div>
         </div>
     </div>
   )
