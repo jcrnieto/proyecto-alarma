@@ -1,4 +1,4 @@
-import './navbar.css';
+import './navBar.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
@@ -7,7 +7,7 @@ import { GrClose } from 'react-icons/gr';
 const Navbar = () => {
 
    const [menuOpen, setMenuOpen] = useState(false);
-   const [openToggler, setOpenToggler] = useState(false);
+   // const [openToggler, setOpenToggler] = useState(false);
 
   return (
     <div className='container-navbar'>
