@@ -1,5 +1,6 @@
 .container-footer{
     height:350px ;
+    color: aliceblue;
 }
 
 .footer-superior{
@@ -26,11 +27,45 @@
     margin-top: 0;
 }
 
+.link-footer{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.ul-contact{
+    list-style: none;
+}
+
+.list{
+    display: flex;
+    margin-bottom: 0;
+}
+
+.list-text{
+    margin-top: 0px;
+}
+
+.list-icon{
+    margin-top: 0px; 
+}
+
+.list-contact{
+    margin-right: 10px;
+}
+
+.title-contact{
+    margin-left: 20px;
+}
+
 @media (max-width: 768px){
     .footer-superior{
-        height: 100vh;
+        height: 90vh;
         flex-direction: column;
        
+    }
+
+    .container-conocenos{
+        margin-top: 0;
     }
 }
 

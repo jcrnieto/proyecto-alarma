@@ -1,24 +1,49 @@
 import './footer.css';
+import { Link } from 'react-router-dom';
+import { BsFillTelephoneFill } from 'react-icons/bs';
+import { ImLocation } from 'react-icons/im';
+import { MdOutlineMailOutline } from 'react-icons/md';
+import { BiLogoFacebookSquare } from 'react-icons/bi';
+import { BsInstagram } from 'react-icons/bs';
 
 const Footer = () => {
   return (
     <div className='container-footer'>
     <div className="footer-superior">
+       <Link to='/'>
         <div className='logo-footer'>
            LOGO
         </div>
-        <div>
+       </Link>
+        <div className='container-conocenos'>
            <h1>Conocenos</h1> 
-           <h3>Empresa</h3>
-           <h3>Productos</h3>
-           <h3>Contacto</h3>
+           <h3><Link to='/company' className='link-footer'>Empresa</Link></h3>
+           <h3><Link to='products' className='link-footer'>Productos</Link></h3>
+           <h3><Link to='contact' className='link-footer'>Contacto</Link></h3>
         </div>
         <div>
-            <h1>Contáctanos</h1>
-            <h3>telefono</h3>
-            <h3>direccion</h3>
-            <h3>mail</h3>
-            <h3>redes</h3>
+           
+            <ul className='ul-contact'>
+            <li className='list'>
+               <h1 className='title-contact'>Contáctanos</h1>
+            </li>
+            <li className='list'>
+              <i className='list-icon'><BsFillTelephoneFill/></i>
+              <h4 className='list-text'>(0351) 153675890</h4>
+            </li>
+            <li className='list'>
+              <i className='list-icon'><ImLocation/></i>
+              <h4 className='list-text list-text-direction'>Padre Lozano 3456.Córdoba</h4>
+            </li>
+            <li className='list'>
+              <i className='list-icon'><MdOutlineMailOutline/></i>
+              <h4 className='list-text'>escalante@gmail.com</h4>
+            </li>
+            <li className='list'>
+              <i className='list-contact'><BiLogoFacebookSquare/></i>
+              <i className='list-contact'><BsInstagram/></i>
+            </li>
+            </ul>
         </div>
     </div>
     <div className='footer-inferior'>

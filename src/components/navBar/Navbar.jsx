@@ -7,7 +7,7 @@ import { GrClose } from 'react-icons/gr';
 const Navbar = () => {
 
    const [menuOpen, setMenuOpen] = useState(false);
-   // const [openToggler, setOpenToggler] = useState(false);
+   
 
   return (
     <div className='container-navbar'>
@@ -19,13 +19,15 @@ const Navbar = () => {
            </div>
         </div>
         <div className='navbar-inferior'>
+            <Link to='/'>
             <div className='container-logo'>
                 LOGO
             </div>
+            </Link>
             <div className='container-listnavbar'>
                 <ul className={`menu-items ${menuOpen ? "open" : ""}`}>
                    <li className='item-navbar'>
-                      <Link to='/' className='link-navbar'>Empresa </Link>
+                      <Link to='/company' className='link-navbar'>Empresa </Link>
                    </li>
                    <li className='item-navbar'> 
                       <Link to='/products' className='link-navbar'> Productos </Link>
@@ -35,6 +37,7 @@ const Navbar = () => {
                    </li>
                </ul>
             </div>
+
             <div className='menu-icon' onClick={() => setMenuOpen(!menuOpen)}>
               {menuOpen ? <GrClose /> : <AiOutlineMenu />}
            </div>
