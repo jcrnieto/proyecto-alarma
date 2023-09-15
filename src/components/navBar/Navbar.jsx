@@ -26,14 +26,14 @@ const Navbar = () => {
             </Link>
             <div className='container-listnavbar'>
                 <ul className={`menu-items ${menuOpen ? "open" : ""}`}>
-                   <li className='item-navbar'>
+                   <li className='item-navbar' onClick={(e) => {setMenuOpen(!menuOpen)}}>
                       <Link to='/company' className='link-navbar'>Empresa </Link>
                    </li>
-                   <li className='item-navbar'> 
+                   <li className='item-navbar' onClick={(e) => {setMenuOpen(!menuOpen)}}> 
                       <Link to='/products' className='link-navbar'> Productos </Link>
                    </li>
                    <li className='item-navbar'>
-                      <Link to='/contact' className='link-navbar'> Contacto </Link>
+                      <Link to='/contact' className='link-navbar' onClick={(e) => {setMenuOpen(!menuOpen)}}> Contacto </Link>
                    </li>
                </ul>
             </div>
