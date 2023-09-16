@@ -1,6 +1,33 @@
 .container-contact{
-    height: 100vh;
+    height: auto;
     margin-top: 42px;
+    background-color: #FFFFFF;
 }
 
+.map-container{
+    height:auto;
+}
+
+.container-map{
+    height: 400px;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title-map{
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .container-contact{
+        height: auto;
+    }
+     
+    .container-map{
+       width: 90%;
+    }
+}
 
