@@ -24,10 +24,15 @@
 @media (max-width: 768px){
     .container-contact{
         height: auto;
+        margin: 0;
     }
      
     .container-map{
        width: 90%;
+    }
+
+    .container-portada{
+       
     }
 }
 

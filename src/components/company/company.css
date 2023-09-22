@@ -24,3 +24,9 @@
     font-size: 80px;
     color: black;
 }
+
+@media (max-width: 768px){
+    .container-company{
+        margin: 0;
+    }
+}

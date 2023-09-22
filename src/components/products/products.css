@@ -34,3 +34,9 @@
     font-size: 20px;
     margin-top: 0;
 }
+
+@media (max-width: 768px){
+    .container-products{
+        margin: 0;
+    }
+}
