@@ -1,0 +1,80 @@
+.container-content{
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; 
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.container-content > div {
+     display: flex;
+    align-items: center;
+    justify-content: center;  
+    
+  }
+
+.container-alarmas{
+    background-color: #80edeb;
+    height: 450px;
+    width: 450px;
+   
+}
+
+.container-camaras{
+    background-color: #4060ec;
+    height: 450px;
+    width: 450px;
+}
+
+.container-accesorios{
+    background-color: #4060ec;
+    height: 450px;
+    width: 450px;
+}
+
+.container-comunicadores{
+    background-color: #80edeb;
+    height: 450px;
+    width: 450px;
+}
+
+@media (max-width: 767px) {
+    .container-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+  
+    .container-content > div {
+      width: 100%;
+    
+    }
+
+     .container-alarmas{
+        width: 250px;
+        height: 300px;
+    }
+
+    .container-camaras{
+        width: 90%;
+        height: 300px;
+     }
+
+     .container-accesorios{
+        width: 90%;
+        height: 300px;
+    }
+
+    .container-comunicadores{
+        width: 90%;
+        height: 300px;
+    } 
+  }
+  
+  
+  
+  
+  
+  
+  

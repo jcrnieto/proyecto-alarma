@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { GrClose } from 'react-icons/gr';
+import img_logo from '../../image/img-logo.png';
 
 const Navbar = () => {
 
@@ -21,7 +22,7 @@ const Navbar = () => {
         <div className='navbar-inferior'>
             <Link to='/'>
             <div className='container-logo'>
-                LOGO
+               <img src={img_logo} alt="" className='img-logo-navbar'/> 
             </div>
             </Link>
             <div className='container-listnavbar'>

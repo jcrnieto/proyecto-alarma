@@ -5,6 +5,7 @@ import { ImLocation } from 'react-icons/im';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { BiLogoFacebookSquare } from 'react-icons/bi';
 import { BsInstagram } from 'react-icons/bs';
+import img_logo from '../../image/img-logo-footer.png';
 
 const Footer = () => {
   return (
@@ -12,7 +13,8 @@ const Footer = () => {
     <div className="footer-superior">
        <Link to='/'>
         <div className='logo-footer'>
-           LOGO
+           {/* <img src={img_logo} alt="" className='img-logo-footer'/>  */}
+           logo
         </div>
        </Link>
         <div className='container-conocenos'>
