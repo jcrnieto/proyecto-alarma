@@ -5,20 +5,20 @@ import { ImLocation } from 'react-icons/im';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { BiLogoFacebookSquare } from 'react-icons/bi';
 import { BsInstagram } from 'react-icons/bs';
-import img_logo from '../../image/img-logo-footer.png';
+import img_logo from '../../image/footer-logo.png';
 
 const Footer = () => {
+
   return (
     <div className='container-footer'>
     <div className="footer-superior">
        <Link to='/'>
         <div className='logo-footer'>
-           {/* <img src={img_logo} alt="" className='img-logo-footer'/>  */}
-           logo
+            <img src={img_logo} alt="" className='img-logo-footer'/> 
         </div>
        </Link>
         <div className='container-conocenos'>
-           <h1>Conocenos</h1> 
+           <h1 className='title-conocenos'>Conocenos</h1> 
            <h3><Link to='/company' className='link-footer'>Empresa</Link></h3>
            <h3><Link to='products' className='link-footer'>Productos</Link></h3>
            <h3><Link to='contact' className='link-footer'>Contacto</Link></h3>

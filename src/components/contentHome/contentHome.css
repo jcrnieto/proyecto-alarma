@@ -1,74 +1,65 @@
-.container-content{
-     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px; 
-    justify-items: center;
+ .container-content-card{
+    height: auto;
+    width: 100%;
+    display: flex;
     align-items: center;
-    margin: 20px;
-}
-
-.container-content > div {
-     display: flex;
-    align-items: center;
-    justify-content: center;  
-    
-  }
-
-.container-alarmas{
-    background-color: #80edeb;
-    height: 450px;
-    width: 450px;
+    justify-content:center;
+    flex-wrap: wrap; 
+    background-color: #E6CECE;
    
 }
 
-.container-camaras{
-    background-color: #4060ec;
-    height: 450px;
-    width: 450px;
-}
+
+ .container-alarmas{
+    background-color: #e01d1d;
+    height: 350px;
+    width: 550px;
+    margin-top: 20px;
+   
+} 
+
+ .container-camaras{
+    background-color: #52c425;
+    height: 350px;
+    width: 550px;
+    margin-top: 20px;
+} 
 
 .container-accesorios{
-    background-color: #4060ec;
-    height: 450px;
-    width: 450px;
-}
+    background-color: #234ec4;
+    height: 350px;
+    width: 550px;
+    margin-bottom: 20px;
+} 
 
-.container-comunicadores{
-    background-color: #80edeb;
-    height: 450px;
-    width: 450px;
-}
+ .container-comunicadores{
+    background-color: #d60397;
+    height: 350px;
+    width: 550px;
+    margin-bottom: 20px;
+} 
+
+ .img-content{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+} 
 
 @media (max-width: 767px) {
-    .container-content {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
+    .container-alarmas{
+       margin-top: 20px;
     }
-  
-    .container-content > div {
-      width: 100%;
     
-    }
-
-     .container-alarmas{
-        width: 250px;
-        height: 300px;
-    }
-
     .container-camaras{
-        width: 90%;
-        height: 300px;
-     }
-
-     .container-accesorios{
-        width: 90%;
-        height: 300px;
+       margin-top: 0px;
     }
-
+    
+    .container-accesorios{
+      margin-bottom: 0px;
+    }
+    
     .container-comunicadores{
-        width: 90%;
-        height: 300px;
+      margin-bottom: 20px;
     } 
   }
   
