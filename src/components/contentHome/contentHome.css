@@ -6,44 +6,121 @@
     justify-content:center;
     flex-wrap: wrap; 
     background-color: #E6CECE;
-   
+}
+
+.container-alarmas {
+    position: relative;
+    z-index: 5;
+    height: 350px;
+    width: 550px;
+    color: black;
+    margin-top: 20px;
+}
+  
+  .container-alarmas::after {
+      content: "";
+      position: absolute; 
+      z-index: -1; 
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: url('../../image/img-kit-alarma.jpg') center center;
+      opacity: .7;
+  }
+
+.container-camaras{
+    position: relative;
+    z-index: 5;
+    height: 350px;
+    width: 550px;
+    color: black;
+    margin-top: 20px;
+} 
+
+.container-camaras::after {
+    content: "";
+    position: absolute; 
+    z-index: -1; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../../image/img-camaras-content.jpg') center center;
+    opacity: .7;
 }
 
 
- .container-alarmas{
-    background-color: #e01d1d;
+.container-comunicadores{
+    position: relative;
+    z-index: 5;
     height: 350px;
     width: 550px;
-    margin-top: 20px;
-   
+    color: black;
+    margin-bottom: 20px;
 } 
 
- .container-camaras{
-    background-color: #52c425;
-    height: 350px;
-    width: 550px;
-    margin-top: 20px;
-} 
+.container-comunicadores::after {
+    content: "";
+    position: absolute; 
+    z-index: -1; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../../image/img-comunicador-content.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .7;
+}
 
 .container-accesorios{
-    background-color: #234ec4;
+    position: relative;
+    z-index: 5;
     height: 350px;
     width: 550px;
+    color: black;
     margin-bottom: 20px;
 } 
 
- .container-comunicadores{
-    background-color: #d60397;
-    height: 350px;
-    width: 550px;
-    margin-bottom: 20px;
-} 
+.container-accesorios::after {
+    content: "";
+    position: absolute; 
+    z-index: -1; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../../image/img-accesorios-content1.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .7;
+}
 
- .img-content{
-    width: 100%;
+.content-card{
     height: 100%;
-    object-fit: cover; 
-} 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.icon-content{
+  font-size: 80px;
+ 
+}
+
+.text-content{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.container-buttom-content{
+    position: absolute;
+    margin-top: 130px;
+}
 
 @media (max-width: 767px) {
     .container-alarmas{
@@ -64,7 +141,15 @@
   }
   
   
-  
+  @media (max-width:1115px) {
+    .container-camaras{
+        margin-top: 0px;
+     }
+
+     .container-comunicadores{
+        margin-top: -20px;
+      } 
+  }
   
   
   
