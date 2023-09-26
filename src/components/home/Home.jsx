@@ -1,3 +1,4 @@
+import Advice from '../advice/Advice';
 import CarrouselHome from '../carrouselHome/CarrouselHome';
 import CarrouselMarca from '../carrouselMarca/CarrouselMarca';
 import ContentHome from '../contentHome/ContentHome';
@@ -9,6 +10,7 @@ const Home = () => {
     <div className='container-home'>
        <CarrouselHome/>
        <ContentHome/>
+       <Advice/>
        <CarrouselMarca/>
     </div>
   )
