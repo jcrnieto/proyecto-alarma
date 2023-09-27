@@ -14,7 +14,7 @@ const ContentHome = () => {
                <p className='text-content'>Kit de Alarmas</p>
                <div className='container-buttom-content'>
                   <Link to='/products'>
-                     <button class="cta">
+                     <button className="cta">
                         <span>Ver Productos</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                            <path d="M1,5 L11,5"></path>
@@ -31,7 +31,7 @@ const ContentHome = () => {
                <p className='text-content'>Kit de Cámaras</p>
                <div className='container-buttom-content'>
                   <Link to='/products'>
-                    <button class="cta">
+                    <button className="cta">
                         <span>Ver Productos</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                            <path d="M1,5 L11,5"></path>
@@ -48,7 +48,7 @@ const ContentHome = () => {
                <p className='text-content'>Accesirios para Alármas</p>
                <div className='container-buttom-content'>
                   <Link to='/products'>
-                     <button class="cta">
+                     <button className="cta">
                         <span>Ver Productos</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                            <path d="M1,5 L11,5"></path>
@@ -65,7 +65,7 @@ const ContentHome = () => {
                <p className='text-content'>Comunicador para Alarmas</p>
                <div className='container-buttom-content'>
                   <Link to='/products'>
-                     <button class="cta">
+                     <button className="cta">
                         <span>Ver Productos</span>
                         <svg viewBox="0 0 13 10" height="10px" width="15px">
                            <path d="M1,5 L11,5"></path>

@@ -74,6 +74,15 @@
 @media (max-width: 767px) {
     .container-advice{
         flex-direction: column;
+        height: auto;
+    }
+
+    .button-advice{
+      margin-bottom: 20px;
+    }
+
+    .container-text-advice{
+      text-align: center;
     }
 
     
