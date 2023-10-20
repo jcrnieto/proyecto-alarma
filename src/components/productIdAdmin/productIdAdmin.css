@@ -1,0 +1,45 @@
+.container-admin{
+    height: auto;
+    margin-top: 30px;
+}
+
+.img-admin{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.title-admin{
+    text-align: center;
+    font-size: 50px;
+}
+
+.description-admin{
+    font-size: 25px;
+    text-align: center;
+}
+
+.container-button-img{
+    display: flex;
+}
+
+.container-button-admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.button-delete{
+    margin-bottom: 40px;
+}
+
+.button-update{
+    margin-top: 40px;
+}
+
+.img-admin{
+    width: 700px;
+    height: 400px;
+    object-fit:scale-down;
+}

@@ -1,0 +1,21 @@
+.container-admin{
+    height: auto;
+    width: auto;
+    background: #E7EBCC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    padding-top: 30px;
+    
+}
+
+.card-admin{
+    background: white;
+    width: 1000px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+
