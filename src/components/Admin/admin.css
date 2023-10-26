@@ -18,4 +18,37 @@
     border-radius: 20px;
 }
 
+.link-admin{
+    text-decoration: none;
+}
+
+.container-id-admin{
+    color: black;
+    width: auto;
+}
+
+@media (max-width: 768px){
+
+    .container-admin{
+        width: auto;
+       
+    }
+
+    .card-admin{
+       width: 100%;
+       
+    }
+
+    .container-button-img{
+        width: auto;
+        background-color: blue;
+    }
+     
+    /* .img-admin{
+        width: 40px;
+    } */
+   
+     
+}
+
 

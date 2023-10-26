@@ -8,6 +8,7 @@ import Footer from './components/footer/Footer';
 import Home from './components/home/Home';
 import Admin from './components/Admin/Admin';
 import ProductIdAdmin from './components/productIdAdmin/ProductIdAdmin';
+import AddProductAdmin from './components/addProductAdmin/AddProductAdmin';
 //import ComponentePrueba from './components/ComponentePrueba'; 
 
 function App() {
@@ -23,6 +24,7 @@ return (
           <Route path='/contact' element={<Contact/>} />
           <Route path='/admin' element={<Admin/>} />
           <Route path='/productIdAdmin/:id' element={<ProductIdAdmin/>} />
+          <Route path='/admin/addProductAdmin' element={<AddProductAdmin enableInput/>} />
 
           {/* <Route path='/componenteprueba' element={<ComponentePrueba/>} /> */}
        </Routes>

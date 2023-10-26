@@ -5,9 +5,9 @@ const FormContact = () => {
     <div className='container-form'>
       <form className="form">
         <span className="signup"> Envianos tu consulta</span>
-        <input type="email" placeholder="Email address" className="form--input" />
-        <input type="password" placeholder="Password" className="form--input" />
-        <input type="password" placeholder="Confirm password" className="form--input" />
+        <input type="email" placeholder="Email" className="form--input" />
+        <input type="text" placeholder="Nombre" className="form--input" />
+        <input type="text" placeholder="Mensaje" className="form--input" />
         <button className="form--submit">
            Enviar
         </button>

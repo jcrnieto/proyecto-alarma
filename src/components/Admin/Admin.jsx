@@ -15,6 +15,11 @@ if (loading) {
 
   return (
     <div className="container-admin">
+      <div>
+         <Link to={'/admin/addProductAdmin'} >
+           <button >Agregar Producto</button>
+         </Link>
+      </div>
       {
         data.map((product) =>
           <div key={product.id} className='card-admin'>
