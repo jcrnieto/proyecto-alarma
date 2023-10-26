@@ -15,9 +15,11 @@ const Navbar = () => {
         <div className='navbar-superior'>
            <p>Padre Lozano 3456</p>
            <p>(0351) 153675890</p>
+           <Link to={'/admin'}>
            <div>
-             redes
+             admin
            </div>
+           </Link>
         </div>
         <div className='navbar-inferior'>
             <Link to='/'>
