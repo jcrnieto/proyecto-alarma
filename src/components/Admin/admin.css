@@ -27,6 +27,12 @@
     width: auto;
 }
 
+.container-img-product{
+    /* background-color: blue; */
+}
+
+
+
 @media (max-width: 768px){
 
     .container-admin{
@@ -42,12 +48,15 @@
     .container-button-img{
         width: auto;
         background-color: blue;
+        width: auto;
     }
+    
+    img .img-admin{
+       margin-right: 50px;
+       margin-left: 0;
+     }
      
-    /* .img-admin{
-        width: 40px;
-    } */
-   
+    
      
 }
 

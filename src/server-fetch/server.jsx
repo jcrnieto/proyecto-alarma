@@ -8,7 +8,7 @@ export const UseGetProducts = () => {
    
     useEffect(() => {
     //fetch('http://localhost:3001/getProducts')
-    fetch('/getProducts')
+    fetch('https://backend-alarma.onrender.com/getProducts')
     .then((response) => response.json())
     .then((data) => {
       setData(data);
@@ -31,7 +31,7 @@ export const useDeleteProduct =async (id) => {
 
    try {
       //await fetch(`http://localhost:3001/deleteProduct/${id}`, {
-      await fetch(`/deleteProduct/${id}`, {  
+      await fetch(`https://backend-alarma.onrender.com/deleteProduct/${id}`, {  
         method: 'DELETE',
       }); 
   
@@ -72,7 +72,7 @@ export const useGetIdProduct = (id) => {
 
   useEffect(() => {
   //fetch('http://localhost:3001/getIdProduct/' + id)
-  fetch('/getIdProduct/' + id)
+  fetch('https://backend-alarma.onrender.com/getIdProduct/' + id)
   .then((response) => response.json())
   .then((data) => {
     setData(data);
