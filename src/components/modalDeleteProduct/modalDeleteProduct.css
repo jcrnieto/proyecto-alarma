@@ -27,3 +27,12 @@
 .button-cancel-modal{
     margin-left: 20px;
 }
+
+@media (max-width: 768px){
+    .container-modal-delete{
+        width: 100%;
+        left: 0;
+        top:50%;
+    }
+     
+}

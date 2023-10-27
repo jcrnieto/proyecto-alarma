@@ -3,11 +3,6 @@
     margin-top: 30px;
 }
 
-.img-admin{
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
 .title-admin{
     text-align: center;
     font-size: 50px;
@@ -38,8 +33,24 @@
     margin-top: 40px;
 }
 
-.img-admin{
+.img-idadmin{
     width: 700px;
     height: 400px;
     object-fit:scale-down;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+@media (max-width: 768px){
+    .container-button-img{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img-idadmin{
+       margin-left: 0;
+       margin-right: 0;
+       width: 100%;
+    }
+     
 }

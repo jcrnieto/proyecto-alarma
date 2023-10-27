@@ -17,7 +17,7 @@ const ProductIdAdmin = () => {
     return (
         <div className='container-admin'>
             <div className='container-button-img'>
-                <img src={data.image} alt="" className='img-admin' />
+                <img src={data.image} alt="" className='img-idadmin' />
                 <div className='container-button-admin'>
                     <button className='button-delete' onClick={handleDeleteClick}> Eliminar Producto</button>
                     <button className='button-update' > Actualizar Producto</button>

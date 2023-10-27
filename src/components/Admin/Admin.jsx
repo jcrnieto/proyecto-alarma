@@ -9,6 +9,11 @@ const Admin = () => {
   //   maxWidth: '100%',
   //   marginLeft: '25%',
   // };
+
+  // style={{
+  //   maxWidth: '100%',
+  //   marginLeft: '15%'
+  //  }}
   
 if (loading) {
     return <div>Cargando...</div>;
@@ -31,11 +36,7 @@ if (loading) {
             <Link className='link-admin' to={'/productIdAdmin/' + product.id} >
               <div className='container-id-admin'>
                 <div className='container-img-product'>
-                  <img src={product.image} alt="" className="img-admin" 
-                     style={{
-                       maxWidth: '100%',
-                       marginLeft: '15%'
-                      }}/>
+                  <img src={product.image} alt="" className="img-admin"/>
                 </div>
                 <h2 className='title-admin'> {product.name} </h2>
                 <p className='description-admin'> {product.description} </p>

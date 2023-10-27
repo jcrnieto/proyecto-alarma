@@ -28,7 +28,11 @@
 }
 
 .container-img-product{
-    /* background-color: blue; */
+     width: auto; 
+}
+
+.img-admin{
+    margin-left: 15%;
 }
 
 
@@ -45,16 +49,16 @@
        
     }
 
-    .container-button-img{
+    .container-img-product{
         width: auto;
-        background-color: blue;
-        width: auto;
-    }
+    } 
     
-    img .img-admin{
-       margin-right: 50px;
-       margin-left: 0;
+     .img-admin{
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
      }
+
      
     
      
