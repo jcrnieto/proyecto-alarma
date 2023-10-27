@@ -49,6 +49,11 @@ const Footer = () => {
         </div>
     </div>
     <div className='footer-inferior'>
+    <Link to={'/admin'}>
+           <div>
+             admin
+           </div>
+           </Link>
          <p className='footer-reserved'>Todos los derechos reservados</p>
     </div>
     </div>
