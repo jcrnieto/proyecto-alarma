@@ -1,6 +1,6 @@
 import './addProductAdmin.css';
 import { useState } from 'react';
-//import { useAddProduct } from '../../server-fetch/server';
+import { UseGetProducts } from '../../server-fetch/server';
 import { useNavigate } from "react-router-dom";
 
 const AddProductAdmin = () => {
@@ -41,7 +41,7 @@ const AddProductAdmin = () => {
         console.log(formData.name, formData.description, formData.image)
         try {
             //const response = await fetch('http://localhost:3001/addProduct', {
-              const response = await fetch('/addProduct', {
+              const response = await fetch('https://backend-alarma.onrender.com/addProduct', {
               method: 'POST',
               body: formDataToSend,
             });
@@ -62,6 +62,7 @@ const AddProductAdmin = () => {
         // useAddProduct(formData);
         alert("Formulario creado con exito!");
         navigate("/admin");
+        UseGetProducts();
     }
 
  return (

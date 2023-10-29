@@ -1,5 +1,5 @@
 import './modalDeleteProduct.css';
-import { useDeleteProduct } from '../../server-fetch/server';
+import { useDeleteProduct, UseGetProducts } from '../../server-fetch/server';
 import { useParams, useNavigate } from 'react-router-dom';
 
 
@@ -9,7 +9,8 @@ const ModalDeleteProduct = ({open, onClose}) => {
   // const deleteProduct = useDeleteProduct(id);
   const productDelete = () =>{
     useDeleteProduct(id);
-    navigate("/admin")
+    navigate("/admin");
+    UseGetProducts();
   }
    
   return (
