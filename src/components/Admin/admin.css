@@ -1,4 +1,4 @@
-.container-admin{
+.container-admin-product{
     height: auto;
     width: auto;
     background: #E7EBCC;
@@ -7,8 +7,12 @@
     align-items: center;
     justify-content: center;
     margin-top: 45px;
-    padding-top: 30px;
+    padding-top: 40px;
     
+}
+
+.buttom-addproduct-admin{
+    margin-bottom: 40px;
 }
 
 .card-admin{
@@ -25,6 +29,10 @@
 .container-id-admin{
     color: black;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-img-product{
@@ -32,10 +40,27 @@
 }
 
 .img-admin{
-    margin-left: 15%;
+   margin-top: 20px;
 }
 
+.container-loading{
+    height: 70vh;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+   
+}
 
+.container-notproduct{
+    height: 70vh;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
 
 @media (max-width: 768px){
 
@@ -59,7 +84,10 @@
         width: 100%;
      }
 
-     
+     .container-notproduct{
+       margin-top: 0;
+       text-align: center;
+    } 
     
      
 }

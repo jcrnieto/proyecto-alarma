@@ -26,7 +26,7 @@
       left: 0;
       right: 0;
       background: url('../../image/img-kit-alarma.jpg') center center;
-      opacity: .7;
+      opacity: 0.4;
   }
 
 .container-camaras{
@@ -47,7 +47,7 @@
     left: 0;
     right: 0;
     background: url('../../image/img-camaras-content.jpg') center center;
-    opacity: .7;
+    opacity: 0.4;
 }
 
 
@@ -72,7 +72,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: .7;
+    opacity: 0.4;
 }
 
 .container-accesorios{

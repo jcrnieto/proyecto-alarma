@@ -5,27 +5,18 @@ import { Link } from "react-router-dom";
 const Admin = () => {
   const { data, loading } = UseGetProducts();
 
-  // const imageStyle = {
-  //   maxWidth: '100%',
-  //   marginLeft: '25%',
-  // };
-
-  // style={{
-  //   maxWidth: '100%',
-  //   marginLeft: '15%'
-  //  }}
-  
+ 
 if (loading) {
-    return <div>Cargando...</div>;
+    return <div className="container-loading">Cargando...</div>;
   }
 
   if (data.length === 0) {
-    return <div>No hay productos disponibles.</div>;
+    return <div className="container-notproduct">No hay productos disponibles.</div>;
   }
 
   return (
-    <div className="container-admin">
-      <div>
+    <div className="container-admin-product">
+      <div className="buttom-addproduct-admin">
          <Link to={'/admin/addProductAdmin'} >
            <button >Agregar Producto</button>
          </Link>

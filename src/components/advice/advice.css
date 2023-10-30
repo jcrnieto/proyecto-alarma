@@ -74,6 +74,7 @@
 @media (max-width: 767px) {
     .container-advice{
         flex-direction: column;
+        align-items: center;
         height: auto;
     }
 
@@ -82,8 +83,21 @@
     }
 
     .container-text-advice{
+       margin-left: 0;
+       margin-right: 0;
+    }
+
+    .title-advice{
       text-align: center;
     }
 
-    
+    .content-advice{
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .button-advice{
+      margin-bottom: 60px;
+      margin-top: 30px;
+  }
 }
