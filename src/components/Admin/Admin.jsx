@@ -6,7 +6,7 @@ const Admin = () => {
   const { data, loading } = UseGetProducts();
 
  
-if (loading) {
+  if (loading) {
     return <div className="container-loading">Cargando...</div>;
   }
 

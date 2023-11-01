@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ModalDeleteProduct from '../modalDeleteProduct/ModalDeleteProduct';
 import { useGetIdProduct } from "../../server-fetch/server";
 import { useParams } from 'react-router-dom';
